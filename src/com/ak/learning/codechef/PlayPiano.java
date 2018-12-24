@@ -6,16 +6,15 @@ public class PlayPiano {
     public  static  void main(String args[])
     {
         Scanner read= new Scanner(System.in);
-        String input= read.nextLine();
-        boolean isvalid = isvalidInput(input);
-
-        if (isvalid)
-        {
-            System.out.println("PlayPiano is proper way");
-        }
-        else
-        {
-            System.out.println("PlayPiano is  not proper way");
+        int numofTest = Integer.parseInt(read.nextLine());
+        for(int i=0;i<numofTest;i++) {
+            String input = read.nextLine();
+            boolean isvalid = isvalidInput(input);
+            if (isvalid) {
+                System.out.println("Yes");
+            } else {
+                System.out.println("No");
+            }
         }
     }
 
