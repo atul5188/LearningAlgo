@@ -19,13 +19,13 @@ public class PlayPiano {
         }
     }
 
-    private static boolean isvalidInput(String input) {
-        if(input.length()%2!=0)
+    private static boolean isvalidInput(String inputString) {
+        if(inputString.length()%2!=0)
         {
             return false;
         }
-            for (int i = 0; i < input.length(); i += 2) {
-                if (input.charAt(i) == input.charAt(i + 1))
+            for (int i = 0; i < inputString.length(); i += 2) {
+                if (inputString.charAt(i) == inputString.charAt(i + 1))
                    return  false;
                     }
             return  true;
